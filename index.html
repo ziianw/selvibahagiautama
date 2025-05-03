@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="images/logoweb.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/css/style.css">
+    <title>PT. SELVI BAHAGIA UTAMA</title>
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+<script src="https://kit.fontawesome.com/950f61a1e3.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <nav>
+      <div class="logo">
+        <img src="images/logo.svg" alt="logo">
+      </div>
+  
+      <div class="hamburger">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+      </div>
+  
+      <div class="top-menu">
+        <!-- Tombol Close (Hamburger) -->
+  
+        <ul>
+          <li><a href="#home">Beranda</a></li>
+          <li><a href="#client">Klien</a></li>
+          <li><a href="#about">Tentang Kami</a></li>
+          <li><a href="./project.html">Proyek</a></li>
+          <li><a href="#footer">Karir</a></li>
+          <div class="close">
+            <svg 
+              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="black" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </div>
+        </ul>
+      </div>
+  
+      <!-- Bagian "Hubungi Kami" dipindah ke bawah -->
+      <div class="extra-nav">
+        <a href="./contact.html" class="pai">Hubungi Kami</a>
+      </div>
+    </nav>
+  </div>
+    
+
+      <!-- Swiper Header -->
+      <section class="landingpage swiper mySwiper" id="home">
+        <div class="wrapper swiper-wrapper">
+          <div class="slide swiper-slide">
+            <video class="image" autoplay loop muted>
+              <source src="images/vid gkk.mp4" type="video/mp4">
+            </video>
+            <div class="image-data" style="margin-bottom: 40px;">
+              <h2>PT. SELVI BAHAGIA UTAMA</h2>
+              <span class="text">Menghasilkan proyek-proyek berkualitas tinggi, efisiensi biaya, dan perhatian tinggi terhadap keberlanjutan lingkungan</span>
+            </div>
+          </div>
+          <div class="slide swiper-slide">
+            <img src="images/1galerii.png" alt="" class="image" style="filter: brightness(0.6);" />
+            <div class="image-data">
+              <h2>GRAHA KARANGSARI KARAWANG</h2>
+              <span class="text">Jl. Karang Sari, Karangsari, Kec. Purwasari, Karawang, Jawa Barat 41373</span>
+             </div>
+          </div>
+          <div class="slide swiper-slide">
+            <img src="images/galeri11.png" alt="" class="image" style="filter: brightness(0.6);"/>
+            <div class="image-data">
+              <h2>CIMANGGIS GOLF ESTATE</h2>
+              <span class="text">Jl. Cimanggis Boulevard, Tapos, Kec. Tapos, Kota Depok, Jawa Barat 16457</span>
+            </div>
+          </div>
+          <div class="slide swiper-slide">
+            <img src="images/ppc.svg" alt="" class="image" style="filter: brightness(0.6);" />
+            <div class="image-data">
+              <h2>PERUM PERMATA CILEUNGSI</h2>
+              <span class="text">Jatisari, Kec. Cileungsi, Kabupaten Bogor, Jawa Barat 16820</span>
+            </div>
+          </div>
+  
+  
+        </div>
+  
+        <div class="swiper-button-next nav-btn"></div>
+        <div class="swiper-button-prev nav-btn"></div>
+        <div class="swiper-pagination"></div>
+      </section>
+  
+  <!-- Our  Services -->
+  <section class="text-service container" id="service">
+    <div class="photo-container">
+      <div class="text-box" style="text-align: center;">
+         <div class="box" data-aos="fade-up"
+         data-aos-duration="2000">
+            <h1>Layanan Kami</h1>
+            <p>Berikut ini adalah Layanan yang kami berikan.</p>
+         </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="our-service aos-init aos-animate container">
+    <div class="os-container">
+      <div class="box-our-service">
+        <div class="box" data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="1000">
+          <img src="images/header2.jpg" alt="">
+          <h3>Pengembang Properti</h3>
+          <button onclick="showLargeImage(10)">Detail</button>
+      </div>
+        <div class="box" data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="1100">
+          <div class="contener">
+            <img src="images/galeri3.png" alt="">
+          <h3>Sumber Daya Air</h3>
+          <button onclick="showLargeImage(11)">Detail</button>
+          </div>
+        </div>
+        <div class="box" data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="1200">
+          <img src="images/galeri4.png" alt="">
+          <h3>Penyewaan Alat Berat</h3>
+          <button onclick="showLargeImage(12)">Detail</button>
+        </div>
+        <div class="box" data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="1300">
+          <img src="images/galeri8.png" alt="">
+          <h3>Pematangan Lahan</h3>
+          <button onclick="showLargeImage(13)">Detail</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <span></span>
+
+  <div id="largeImageModal10" class="modil">
+    <div class="properti">
+      <!-- <img src="images/header2.png" alt="Foto Besar" class="modil-content" style="margin-top: 90px;"> -->
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/header2.jpg" class="d-block w-70" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/rumahgkk.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/PPC.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <p>PT. SELVI BAHAGIA UTAMA memiliki Tim yang terdiri dari ahli-ahli berpengalaman dalam industri properti yang memiliki pengetahuan mendalam tentang seluruh siklus pengembangan properti, mulai dari perencanaan hingga pemasaran.</p>
+    <p>- Tim ahli kami akan membantu dalam merencanakan dan merancang proyek properti Anda. Kami akan memberikan wawasan yang berharga mengenai analisis pasar, potensi keuntungan, dan strategi pemasaran yang efektif.</p>
+    <p>- Kami juga akan memastikan proyek berjalan dengan lancar dan tepat waktu. Tim manajemen proyek kami akan mengawasi setiap tahap pengembangan, mengelola anggaran, dan mengatasi tantangan yang mungkin muncul selama proses.</p>
+    <p>- Kami menyediakan tim arsitek yang berbakat untuk menciptakan desain yang menarik dan fungsional. Desain kami akan menggabungkan elemen estetika yang menarik dengan solusi teknis yang praktis.</p>
+    <p>PT. SELVI BAHAGIA UTAMA berkomitmen untuk memberikan layanan terbaik dengan fokus pada kualitas, efisiensi, dan kepuasan pelanggan. Dengan pengalaman dan keahlian kami dalam industri properti, dapat mempercayai kami sebagai mitra terpercaya untuk mencapai kesuksesan dalam proyek properti Anda.</p>
+    <span class="cloge" onclick="closeModal(10)">&times;</span>
+    </div>
+  </div>
+
+  <div id="largeImageModal11" class="modil">
+    <!-- <img src="images/galeri3.png" alt="Foto Besar" class="modil-content"> -->
+    <div>
+      <div id="carouselExampleIndicators1" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/galeri3.png" class="d-block w-70" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/galeri6.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators1"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators1"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <p>PT. SELVI BAHAGIA UTAMA menyediakan solusi lengkap dan berkelanjutan untuk memenuhi kebutuhan pengelolaan,
+        pengembangan, dan pelestarian sumber daya air. Tim kami terdiri dari para ahli yang berpengalaman dan terlatih
+        dalam berbagai aspek manajemen air, yang siap bekerja sama dengan Anda untuk mengatasi tantangan yang kompleks
+        dalam sektor ini.</p>
+      <p>- Tim kami akan melakukan gagasan mendalam untuk menilai keberlanjutan dan efisiensi potensial dari proyek
+        pengelolaan sumber daya air yang diusulkan. Kami akan mengidentifikasi solusi yang paling sesuai untuk mencapai
+        tujuan proyek Anda dengan mempertimbangkan aspek lingkungan, sosial, dan ekonomi.</p>
+      <p>- Dalam Perencanaan Sumber Daya Air Kami akan membantu Anda dalam merancang rencana strategis untuk
+        mengoptimalkan pemanfaatan sumber daya air, seperti sungai, danau, atau sumber mata air. Perencanaan kami akan
+        mencakup alokasi air yang efisien, pelestarian ekosistem, serta mempertimbangkan kebutuhan beragam pihak yang
+        terlibat.</p>
+      <p>- Kami juga akan mengawasi setiap tahap proyek dengan cermat, termasuk pembangunan fisik, pengadaan peralatan,
+        dan manajemen konstruksi. Tim manajemen proyek kami akan memastikan proyek berjalan tepat waktu, sesuai
+        anggaran,
+        dan dengan tingkat kualitas yang tinggi.
+        Komitmen PT. SELVI BAHAGIA UTAMA adalah memberikan solusi yang berkelanjutan, inovatif, dan berkualitas tinggi
+        untuk memenuhi kebutuhan proyek Anda di bidang sumber daya air. Dengan dukungan tim ahli kami, Anda dapat yakin
+        bahwa proyek Anda akan dijalankan dengan efisiensi, keselamatan, dan dampak positif bagi lingkungan dan
+        masyarakat
+        sekitarnya.</p>
+      <span class="cloge" onclick="closeModal(11)">&times;</span>
+    </div>
+  </div>
+
+  <div id="largeImageModal12" class="modil">
+    <!-- <img src="images/galeri3.png" alt="Foto Besar" class="modil-content"> -->
+    <div>
+      <div id="carouselExampleIndicators2" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/dumptruckhino.png " class="d-block w-100" alt="...">
+          </div>
+          <!-- <div class="carousel-item">
+            <img src="images/equiepment.jpg" class="d-block w-70" alt="...">
+          </div> -->
+          <div class="carousel-item">
+            <img src="images/galeri4.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <p>Dalam lingkup Penyewaan Alat Berat PT. Selvi Bahagia Utama menyediakan solusi lengkap dan handal untuk kebutuhan alat berat dalam berbagai proyek konstruksi dan industri.Tim kami terdiri dari tenaga profesional berpengalaman di bidang peralatan berat, siap untuk memberikan layanan yang tepat waktu dan berkualitas tinggi.</p>
+      <p>- PT. Selvi Bahagia Utama menyediakan beragam alat berat berkualitas tinggi untuk disewa, seperti ekskavator, buldoser, truk dum truk, alat pengangkat, dan peralatan konstruksi lainnya. Semua alat berat yang kami miliki dalam kondisi prima dan terawat dengan baik, siap digunakan sesuai kebutuhan proyek Anda.</p>
+      <p>- Kami menyediakan opsi penyewaan yang fleksibel, mulai dari jangka pendek hingga jangka panjang, sesuai dengan kebutuhan proyek Anda. Anda dapat mengatur penyewaan alat berat sesuai dengan jadwal dan anggaran proyek.</p>
+      <p>- Kami mengutamakan kualitas alat berat kami, karena itu kami akan secara teratur melakukan pemeliharaan dan perawatan rutin untuk memastikan alat berat beroperasi dengan optimal dan aman selama penyewaan.</p>
+      <p>PT. Selvi Bahagia Utama berkomitmen memberikan layanan penyewaan alat berat yang handal, efisien, dan berkualitas tinggi untuk memenuhi kebutuhan proyek konstruksi dan industri Anda. Dengan dukungan dari tim profesional kami, Anda dapat memastikan bahwa alat berat yang Anda sewa akan membantu meningkatkan produktivitas dan keberhasilan proyek Anda secara keseluruhan.</p>
+      <span class="cloge" onclick="closeModal(12)">&times;</span>
+    </div>
+  </div>
+
+  <div id="largeImageModal13" class="modil">
+    <!-- <img src="images/galeri3.png" alt="Foto Besar" class="modil-content"> -->
+    <div>
+      <div id="carouselExampleIndicators3" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+            aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/galeri9.jpg" class="d-block w-70" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/galeri8.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/galeri7.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/galeri4.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators3"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators3"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <p>PT. Selvi Bahagia Utama dalam lingkup Proyek di bidang Cut & Fill juga menyediakan solusi terpadu dan efisien untuk mengelola dan melaksanakan pekerjaan cut dan fill dalam proyek konstruksi atau rekayasa tanah. Tim kami terdiri dari ahli-ahli terlatih dalam teknik-teknik penataan tanah, yang siap untuk memberikan layanan berkualitas tinggi dan hasil yang optimal.</p>
+      <p>- PT. Selvi Bahagia Utama akan melakukan analisis mendalam terhadap topografi area proyek Anda. Dengan menggunakan teknologi pemetaan dan perangkat canggih, kami akan menghasilkan pemodelan digital dari kontur tanah yang akurat, memungkinkan perencanaan yang tepat untuk pekerjaan cut dan fill.</p>
+      <p>- Selama pelaksanaan pekerjaan cut dan fill, tim pengawas kami akan memantau dan mengontrol kualitas pekerjaan secara ketat. Hal ini bertujuan untuk memastikan bahwa semua pekerjaan sesuai dengan standar dan spesifikasi yang telah ditetapkan<p>
+      <p>- Keselamatan adalah prioritas utama kami dalam setiap proyek. Kami akan mengimplementasikan protokol keselamatan yang ketat untuk melindungi kesehatan dan keselamatan semua pihak yang terlibat dalam pekerjaan cut dan fill.</p>
+      <p>Komitmen PT. Selvi Bahagia Utama adalah memberikan layanan cut dan fill yang profesional, andal, dan efisien, yang mengoptimalkan pengelolaan tanah dan menghasilkan hasil proyek yang berkualitas tinggi. Dengan dukungan dari tim ahli kami, Anda dapat yakin bahwa pekerjaan cut dan fill dalam proyek Anda akan dilaksanakan dengan tepat waktu dan sesuai dengan kebutuhan serta spesifikasi yang diinginkan.</p>
+      <span class="cloge" onclick="closeModal(13)">&times;</span>
+    </div>
+  </div>
+
+  <!-- Clients -->
+<br>
+  <section class="text-service container" id="client" style="margin-top: 10px; scroll-margin-block-start: 110px;">
+    <div class="photo-container">
+      <div class="text-box" data-aos="fade-up"
+      data-aos-duration="1750">
+            <h1>Klien Kami</h1>
+            <p>Klien kami adalah alasan kami berada di sini. Setiap Perusahaan berbeda, tetapi pekerjaan yang kami lakukan untuk mereka memiliki standar dengan kompromi yang sama.</p>
+         </div>
+      </div>
+    </div>
+  
+  <div class="client" data-aos="fade-up"
+  data-aos-duration="2500">
+    <div class="client-container">
+      <div class="box-client" style="gap: 30px !important;">
+        <div class="box">
+          <img src="images/logobtn.png" alt="">
+        </div>
+        <div class="box">
+          <img src="images/client1.png" alt="">
+        </div>
+        <div class="box">
+          <img src="images/client7.png" alt="">
+        </div>
+        <div class="box">
+          <img src="images/client3.png" alt="">
+        </div>
+        <div class="box">
+          <img src="images/client5.png" alt="">
+        </div>
+        <div class="box">
+          <img src="images/client4.png" alt="">
+        </div>
+        <div class="box">
+          <img src="images/client6.png" alt="">
+        </div>  
+        <div class="box">
+          <img src="images/snt.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Galerry -->
+
+  <section class="text-gallery container" id="galeri">
+    <div class="photo-container">
+      <div class="text-box" data-aos="fade-up"
+      data-aos-duration="1750">
+            <h1>Galeri</h1>
+            <p>Berikut adalah Ringkasan galeri dari Perusahaan kami.</p>
+         </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <div class="continer" data-aos="fade-up"
+    data-aos-duration="1750">
+      <div class="items-linkes">
+        <span class="item-link menu-active" data-name="all">Galeri</span>
+        <span class="item-link" data-name="properti">Pengembang Properti</span>
+        <span class="item-link" data-name="cut">Pematangan Lahan</span>
+      </div>
+
+      <div class="gallery">
+        <div class="project-img" data-name="properti"><img src="images/galeri5.png" alt="galery"></div>
+        <div class="project-img" data-name="properti"><img src="images/PPC.jpg" alt="galery"></div>
+        <div class="project-img" data-name="properti"><img src="images/rumahgkk.png" alt="galery"></div>
+        <div class="project-img" data-name="cut"><img src="images/galerii8.png" alt="galery"></div>
+        <div class="project-img" data-name="cut"><img src="images/galeri7.png" alt="galery"></div>
+        <div class="project-img" data-name="cut"><img src="images/header3.jpg" alt="galery"></div>
+        <div class="project-img" data-name="properti"><img src="images/75.jpeg" alt="galery"></div>
+        <div class="project-img" data-name="cut"><img src="images/galeri4.png" alt="galery"></div>
+        <div class="project-img" data-name="properti"><img src="images/50.jpeg" alt="galery"></div>
+        <div class="project-img" data-name="properti"><img src="images/finishinggedung.jpg" alt="galery"></div>        
+        <div class="project-img" data-name="properti"><img src="images/Cover peresmian.png" alt="galery"></div>
+        <div class="project-img" data-name="properti"><img src="images/gkk2.jpeg" alt="galery"></div>                
+      </div>
+
+    </div>
+  </section>
+    
+
+    <!-- About us -->
+    <section class="tentang" id="about" style="margin-top: 10px; scroll-margin-block-start: 110px;">
+    <div class="aboutus" style="margin-top: 50px;">
+      <div class="text-box" style="text-align: center;" >
+        <div class="box" data-aos="fade-up"
+        data-aos-duration="1750">
+           <h1>Tentang kami</h1>
+           <p>Berikut ini adalah sebagian dari Profil Perusahaan.</p>
+        </div>
+     </div>
+
+     <div class="kontainer">
+      <section class="about" id="about">
+        <div class="about-content" data-aos="zoom-in-right" data-aos-duration="1750" style="margin-bottom: 35px;">
+          <h1 style="font-size: 28px; font-weight: bold;">PT. SELVI BAHAGIA UTAMA</h1>
+          <p>Adalah perusahaan swasta nasional
+            yang bergerak di-bidang jasa konstruksi dan penyewaan alat berat, yang
+            didirikan pada tanggal 16 Agustus 2016. Melihat potensi yang sangat
+            besar tersebut, PT. SELVI BAHAGIA UTAMA ingin berpartisipasi
+            dalam mendukung pembangunan infrastruktur dengan menjadi salah
+            satu perusahaan kontraktor umum di Indonesia.</p>
+            <p>Dengan komitmen tersebut kami
+              bertekad untuk menjadikan PT. SELVI BAHAGIA
+              UTAMA sebagai kontraktor yang kredibel dalam
+              menyelesaikan proyek dan dipercaya oleh klien.</p><br>
+          <a class="btn btn-primary" href="./about.html" role="button" style="color: white; background-color: darkred; border-color: black;">Baca Selengkapnya</a>
+        </div>
+        <div class="about-image" data-aos="zoom-in-left"
+        data-aos-duration="1750" style="margin-bottom: 30px;">
+          <img src="images/lobbysbu.jpeg" alt="">
+        </div>
+      </div>
+      </section>
+   
+  <!-- Rating -->
+  <section class="rating">
+    <div class="wrapper">
+      <div class="text-ts">
+        <h1 style="font-size: 28px;">Apa Pendapat Tentang Kami?
+        </h1>
+      </div>
+        <i id="left" class="fa-solid fa-angle-left"></i>
+        <ul class="carousel carousel-rating">
+          <li class="card">
+            <div class="img"><img src="images/alex.JPG" alt="img" draggable="false"></div>
+            <h2>Alex Bhizer</h2>
+            <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, libero rem necessitatibus exercitationem ullam voluptatem</p>
+
+          </li>
+          <li class="card">
+            <div class="img"><img src="images/ciwi.jpeg" alt="img" draggable="false"></div>
+            <h2>Bravers Angle</h2>
+            <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, libero rem necessitatibus exercitationem ullam voluptatem</p>
+          </li>
+          <li class="card">
+            <div class="img"><img src="images/fajar-sad-boy_43.png" alt="img" draggable="false"></div>
+            <h2>Van Fajar Deboch</h2>
+            <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, libero rem necessitatibus exercitationem ullam voluptatem</p>
+            
+          </li>
+          <li class="card">
+            <div class="img"><img src="images/entrepreur.jpg" alt="img" draggable="false"></div>
+            <h2>James Khosravi</h2>
+            <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, libero rem necessitatibus exercitationem ullam voluptatem</p>
+            
+          </li>
+          <li class="card">
+            <div class="img"><img src="images/brunomars.jpg" alt="img" draggable="false"></div>
+            <h2>Bruno Mares</h2>
+            <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, libero rem necessitatibus exercitationem ullam voluptatem</p>
+            
+          </li>
+          <li class="card">
+            <div class="img"><img src="images/artis1.jpg" alt="img" draggable="false"></div>
+            <h2>Rangga Azof</h2>
+            <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, libero rem necessitatibus exercitationem ullam voluptatem</p>
+            
+          </li>
+        </ul>
+        <i id="right" class="fa-solid fa-angle-right"></i>
+      </div>
+</section>
+<!-- Rating -->
+
+<!-- artikel -->
+<section class="text-service container">
+    <div class="photo-container">
+      <div class="text-box" data-aos="fade-up"
+      data-aos-duration="1750">
+         <div class="box">
+            <h1>Artikel Terbaru</h1>
+            <p>Berikut ini adalah Artikel ter-baru dan ter-update dari PT. SELVI BAHAGIA UTAMA</p>
+         </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="artikel" data-aos="fade-up"
+  data-aos-duration="2500">
+    <div class="os-container">
+      <div class="box-artikel">
+        <div class="box" data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="1300">
+          <img src="images/youtubegkk.png" alt="">
+          <h3>Graha Karangsari Karawang <i>Tahap I</i></h3>
+          <a href="https://youtu.be/_jijrgVq7GU" target="_blank">
+            <button class="button">Detail</button>
+          </a>
+        </div>
+        <div class="box" data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="1400">
+          <img src="images/Cover peresmian.png" alt="">
+          <h3>Peresmian Masjid Al - Huda</h3>
+          <button onclick="showLargeImage(18)">Detail</button>
+        </div>
+        <div class="box" data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="1500">
+          <img src="images/finishinggedung.jpg" alt="">
+          <h3>Proyek PT. Satelit Nusantara Tiga</h3>
+          <button onclick="showLargeImage(19)">Detail</button>
+        </div>
+        <div class="box" data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="1500">
+          <img src="images/comingsoon.png" alt="">
+          <h3>Coming Soon</h3>
+          <button onclick="showLargeImage(20)">Detail</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="largeImageModal17" class="modil2">
+    <img src="images/kta selvi.png" alt="Foto Besar" class="modil-content" style="margin-top: 75px;">
+    <span class="cloge" onclick="closeModal(17)">&times;</span>
+  </div>
+
+  <div id="largeImageModal18" class="modil2">
+    <div id="carouselExampleIndicators4" class="carousel slide" style>
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="3" aria-label="Slide 4"></button>
+
+      </div>
+      <div class="carousel-inner" style="margin-top: 75px;">
+        <div class="carousel-item active">
+          <img src="images/peresmian masjid 1.jpeg" class="w-700 enlarged-image" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/peresmian masjid 2.jpeg" class="d-block w-100 enlarged-image" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/peresmian masjid 3.jpeg" class="d-block w-100 enlarged-image" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/peresmian masjid 5.jpeg" class="d-block w-100 enlarged-image" alt="...">
+        </div>
+        <!-- <div class="carousel-item" style="width: 380px; margin-left: 115px;">
+          <img src="images/peresmian masjid 6.jpeg" class="d-block w-100 enlarged-image" alt="...">
+        </div> -->
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>    <span class="cloge" onclick="closeModal(18)">&times;</span>
+  </div>
+  <div id="largeImageModal19" class="modil2">
+    <div id="carouselExampleIndicators5" class="carousel slide" style>
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="3" aria-label="Slide 4"></button>
+
+      </div>
+      <div class="carousel-inner" style="margin-top: 75px;">
+        <div class="carousel-item active">
+          <img src="images/finishinggedung.jpg" class="w-700 enlarged-image" alt="..." style="margin-top: 65px;">
+        </div>
+        <div class="carousel-item">
+          <img src="images/finishing2.jpeg" class="d-block w-100 enlarged-image" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/dakbeton.jpeg" class="d-block w-100 enlarged-image" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/dakbeton2.jpeg" class="d-block w-100 enlarged-image" alt="...">
+        </div>
+        <!-- <div class="carousel-item" style="width: 380px; margin-left: 115px;">
+          <img src="images/peresmian masjid 6.jpeg" class="d-block w-100 enlarged-image" alt="...">
+        </div> -->
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>    
+      <span class="cloge" onclick="closeModal(19)">&times;</span>
+  </div>
+  </div>
+  
+  <!-- last of artikel -->
+
+  <footer>
+    <div class="content" id="footer">
+      <div class="top">
+        <div class="logo-details">
+         <img src="images/logo.svg" alt="">
+        </div>
+        <div class="media-icons">
+          <a href="http://www.linkedin.com/company/pt-selvi-bahagia-utama" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="mailto:ptselvibahagiautama2023@gmail.com"><i class="fa-solid fa-envelope"></i></i></a>
+        </div>
+      </div>
+      <div class="link-boxes">
+        <ul class="box">
+          <li class="link_name" style="font-weight: bold;">PT. SELVI BAHAGIA UTAMA</li>
+          <p>Menghasilkan proyek berkualitas tinggi, dengan penyelesaian tepat waktu, efisiensi biaya, dan kepedulian yang tinggi terhadap kelestarian lingkungan</p>
+        </ul>
+        <ul class="box">
+          <li class="link_name">Kantor Pusat</li>
+          <p>Wisma Pede, Jl. Letjen M.T. Haryono, RT.11/RW.5, Tebet Bar., Kec. Tebet, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12810</p>
+          <p><a href=https://goo.gl/maps/2PLjns24w3JK79baA target="_blank" style="color: white; font-weight: normal; font-style: italic;">Lihat di Google Maps</a></p>
+          <p>(021) 21383879</p>
+      </ul>
+        <ul class="box">
+          <li class="link_name">Link</li>
+          <li><a href="#home">Beranda</a></li>
+          <li><a href="#client">Klien</a></li>
+          <li><a href="#about">Tentang Kami</a></li>
+          <li><a href="./project.html">Proyek</a></li>
+          <li><a href="./career.html" target="_blank">Karir</a></li>
+          <li><a href="./contact.html" target="_blank">Hubungi Kami</a></li>
+          <li><a href="https://forms.gle/PFLzxkQbTc8k5SpQ7" target="_blank">Company Profile</a></li>
+        </ul>
+        <ul class="box input-box">
+          <form action="https://formsubmit.co/zianwahidi.2014503@gmail.com" method="POST" target="_blank">
+            <li class="link_name">Lowongan Kerja</li>
+          <li><input type="email" id="email" placeholder="Masukan Email" required></li>
+          <li><input type="button" value="Kirim" onclick="window.open('https://forms.gle/1VkVCpqo2nj67CBA8', '_blank');"></li>
+          </form>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom-details">
+      <div class="bottom_text">
+        <span class="copyright_text">Hak Cipta © 2023 <a href="#">PT. SELVI BAHAGIA UTAMA</a>Seluruh hak dilindungi oleh undang-undang.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Swiper -->
+  <script>
+    // Mengambil elemen-elemen yang akan diubah
+    const hamburger = document.querySelector('.hamburger');
+    const topMenu = document.querySelector('.top-menu');
+    const closeMenu = document.querySelector('.top-menu .close');
+  
+    // Fungsi untuk menampilkan top menu
+    function showTopMenu() {
+      topMenu.classList.add('show');
+    }
+  
+    // Fungsi untuk menyembunyikan top menu
+    function hideTopMenu() {
+      topMenu.classList.remove('show');
+    }
+  
+    // Menambahkan event listener ke tombol hamburger
+    hamburger.addEventListener('click', showTopMenu);
+  
+    // Menambahkan event listener ke tombol close
+    closeMenu.addEventListener('click', hideTopMenu);
+  </script>
+
+<script>
+  // Menggunakan JavaScript untuk menambahkan kelas "active" saat tautan diklik
+  var links = document.querySelectorAll('ul li a');
+  
+  for (var i = 0; i < links.length; i++) {
+    links[i].addEventListener('click', function() {
+      // Hapus kelas "active" dari semua tautan
+      for (var j = 0; j < links.length; j++) {
+        links[j].classList.remove('active');
+      }
+      // Tambahkan kelas "active" ke tautan yang diklik
+      this.classList.add('active');
+    });
+  }
+  </script>
+  
+  
+
+     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+     <script src="dist/js/script.js"></script>
+     <script>
+       AOS.init();
+     </script>
+     
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="images/logoweb.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hubungi Kami - PT. Selvi Bahagia Utama</title>
+    <link rel="stylesheet" href="dist/css/contact.css">
+</head>
+<body>
+    <section>
+        <div class="contact-container">
+            <div class="form-container">
+                <h2>Hubungi Kami</h2>
+                <form method="post" action="" name="contactform" class="contact-form">
+                    <input type="text" name="name" placeholder="Nama Anda" required>
+                    <input type="email" name="email" id="" placeholder="Masukan Email Anda" required>
+                    <textarea name="message" id="" cols="30" rows="10" placeholder="Pesan" required></textarea>
+                    <input type="submit" value="Kirim" class="send-button">
+                    <button onclick="window.location.href='index.html';" class="send-button">Beranda</button>
+                </form>                
+            </div>
+            <!-- Maps -->
+            <div class="maps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15864.64231117049!2d106.84173945455765!3d-6.24255749993138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f37e754e57ef%3A0x97520371d6c4bd30!2sPT.%20SELVI%20BAHAGIA%20UTAMA!5e0!3m2!1sid!2sid!4v1708392697574!5m2!1sid!2sid" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw3ODcG8jYwH8XpOtXGGiUkpZH0n0uz33p4I2nxvAKMUGHnKVFDRzf6pbUnVgfEqWcs/exec'
+        const form = document.forms['contactform']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => alert("Thank you! your form is submitted successfully." ))
+            .then(() => {  window.location.reload(); })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
